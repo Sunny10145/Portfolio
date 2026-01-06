@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Sunny Gautam - Portfolio</title>
+  <title>Sunny Gautam - Portfolio | UPDATED 2025</title>
   <style>
     * {
       margin: 0;
@@ -44,20 +44,20 @@
       top: 0;
       width: 100%;
       z-index: 50;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(20px);
       background: rgba(0, 0, 0, 0);
-      padding: 1.5rem 2rem;
-      transition: all 0.5s ease;
+      padding: 0.75rem 1.5rem;
+      transition: all 0.3s ease;
     }
 
     nav.scrolled {
-      background: rgba(0, 0, 0, 0.6);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 0.75rem 2rem;
+      background: rgba(0, 0, 0, 0.85);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.5rem 1.5rem;
     }
 
     .nav-container {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -65,42 +65,42 @@
     }
 
     .logo {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 900;
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      z-index: 100;
+      gap: 0.4rem;
     }
 
     .logo-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 0.5rem;
+      width: 26px;
+      height: 26px;
+      border-radius: 0.4rem;
       background: linear-gradient(135deg, #ec4899, #a855f7);
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
       font-weight: bold;
+      font-size: 0.85rem;
     }
 
     .nav-links {
       display: flex;
-      gap: 2rem;
+      gap: 1.25rem;
       align-items: center;
     }
 
     .nav-links a {
       color: #d1d5db;
       text-decoration: none;
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       transition: color 0.3s;
       position: relative;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.2rem;
     }
 
     .nav-links a::after {
@@ -109,7 +109,7 @@
       bottom: 0;
       left: 50%;
       width: 0;
-      height: 2px;
+      height: 1.5px;
       background: linear-gradient(90deg, #ec4899, #a855f7);
       transition: all 0.3s;
       transform: translateX(-50%);
@@ -126,7 +126,7 @@
     }
 
     .hire-btn {
-      padding: 0.625rem 1.5rem;
+      padding: 0.45rem 1rem;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.2);
       color: white;
@@ -135,28 +135,28 @@
       cursor: pointer;
       transition: all 0.3s;
       text-transform: uppercase;
-      font-size: 0.875rem;
+      font-size: 0.7rem;
     }
 
     .hire-btn:hover {
       background: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
-      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(236, 72, 153, 0.4);
+      transform: translateY(-1px);
     }
 
     .menu-toggle {
       display: none;
       flex-direction: column;
-      gap: 6px;
+      gap: 4px;
       cursor: pointer;
       z-index: 100;
       background: none;
       border: none;
-      padding: 0.5rem;
+      padding: 0.4rem;
     }
 
     .menu-toggle span {
-      width: 25px;
+      width: 20px;
       height: 2px;
       background: white;
       border-radius: 2px;
@@ -164,7 +164,7 @@
     }
 
     .menu-toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(10px, 10px);
+      transform: rotate(45deg) translate(7px, 7px);
     }
 
     .menu-toggle.active span:nth-child(2) {
@@ -172,37 +172,25 @@
     }
 
     .menu-toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -7px);
+      transform: rotate(-45deg) translate(5px, -5px);
     }
 
     @media (max-width: 768px) {
-      .menu-toggle {
-        display: flex;
-      }
-
+      .menu-toggle { display: flex; }
       .nav-links {
         position: fixed;
-        top: 70px;
+        top: 60px;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.95);
+        background: rgba(0, 0, 0, 0.98);
         flex-direction: column;
-        gap: 1.5rem;
-        padding: 2rem;
+        gap: 1rem;
+        padding: 1.5rem;
         display: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        max-height: calc(100vh - 70px);
-        overflow-y: auto;
       }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .nav-links a {
-        display: block;
-        padding: 0.75rem 0;
-      }
+      .nav-links.active { display: flex; }
+      .nav-links a { padding: 0.5rem 0; font-size: 0.9rem; }
     }
 
     .particles {
@@ -217,39 +205,23 @@
       position: absolute;
       border-radius: 50%;
       animation: float linear infinite;
+      opacity: 0.5;
     }
 
     @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(180deg); }
     }
 
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes slideInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .reveal {
       opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease-out;
+      transform: translateY(20px);
+      transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 
     .reveal.visible {
@@ -257,52 +229,38 @@
       transform: translateY(0);
     }
 
-    section {
-      position: relative;
-      z-index: 10;
-    }
+    section { position: relative; z-index: 10; }
 
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 2rem 1rem;
-      padding-top: 5rem;
+      padding: 1rem;
+      padding-top: 4rem;
       text-align: center;
       overflow: hidden;
     }
 
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-    }
-
+    .hero-bg { position: absolute; inset: 0; z-index: -1; }
     .hero-orb {
       position: absolute;
       border-radius: 50%;
-      filter: blur(80px);
+      filter: blur(50px);
     }
-
     .hero-orb-1 {
-      top: 10%;
-      left: -100px;
-      width: 300px;
-      height: 300px;
-      background: rgba(147, 51, 234, 0.2);
+      top: 20%; left: -60px;
+      width: 200px; height: 200px;
+      background: rgba(147, 51, 234, 0.3);
     }
-
     .hero-orb-2 {
-      bottom: 10%;
-      right: -100px;
-      width: 300px;
-      height: 300px;
-      background: rgba(236, 72, 153, 0.2);
+      bottom: 20%; right: -60px;
+      width: 200px; height: 200px;
+      background: rgba(236, 72, 153, 0.3);
     }
 
     .hero-content {
-      max-width: 1400px;
+      max-width: 900px;
       z-index: 10;
       animation: fadeInUp 0.8s ease-out;
       width: 100%;
@@ -310,29 +268,28 @@
 
     .hero-tag {
       display: inline-block;
-      padding: 0.5rem 1.2rem;
+      padding: 0.35rem 0.9rem;
       border-radius: 9999px;
-      border: 1px solid rgba(236, 72, 153, 0.3);
-      background: rgba(236, 72, 153, 0.1);
+      border: 1px solid rgba(236, 72, 153, 0.4);
+      background: rgba(236, 72, 153, 0.15);
       color: #fda4af;
-      font-size: 0.875rem;
-      font-family: 'Monaco', monospace;
-      margin-bottom: 1.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
       animation: pulse 2s ease-in-out infinite;
     }
 
     @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.03); }
     }
 
     h1 {
-      font-size: clamp(2rem, 10vw, 9rem);
+      font-size: clamp(2rem, 6vw, 4.5rem);
       font-weight: 900;
       line-height: 0.95;
-      margin: 1rem 0 1.5rem 0;
+      margin: 0.5rem 0 1rem 0;
       letter-spacing: -0.02em;
-      word-break: break-word;
     }
 
     h1 .gradient-text {
@@ -341,7 +298,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      animation: gradientShift 5s linear infinite;
+      animation: gradientShift 4s linear infinite;
     }
 
     @keyframes gradientShift {
@@ -350,21 +307,21 @@
     }
 
     .hero-subtext {
-      font-size: clamp(1rem, 5vw, 1.5rem);
+      font-size: clamp(0.95rem, 3vw, 1.2rem);
       color: #9ca3af;
-      margin: 1.5rem 0;
-      min-height: 2rem;
-      font-family: 'Monaco', monospace;
-      line-height: 1.5;
+      margin: 0.75rem 0;
+      min-height: 1.8rem;
+      font-weight: 400;
+      line-height: 1.4;
     }
 
     .hero-desc {
-      font-size: clamp(0.95rem, 3vw, 1.125rem);
+      font-size: clamp(0.85rem, 2vw, 1rem);
       color: #9ca3af;
-      margin: 1.5rem auto;
-      max-width: 48rem;
-      line-height: 1.8;
-      padding: 0 1rem;
+      margin: 1rem auto;
+      max-width: 38rem;
+      line-height: 1.6;
+      padding: 0 0.5rem;
     }
 
     .hero-desc .highlight {
@@ -374,89 +331,78 @@
 
     .button-group {
       display: flex;
-      gap: 1rem;
+      gap: 0.75rem;
       justify-content: center;
-      margin: 2rem 0;
+      margin: 1.5rem 0;
       flex-wrap: wrap;
-      padding: 0 1rem;
     }
 
     .btn {
-      padding: 0.875rem 1.75rem;
+      padding: 0.65rem 1.4rem;
       font-weight: 700;
-      border-radius: 0.75rem;
+      border-radius: 0.6rem;
       border: none;
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
-      transition: all 0.3s;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       text-transform: uppercase;
-      font-size: clamp(0.85rem, 2vw, 1rem);
+      font-size: clamp(0.75rem, 1.6vw, 0.9rem);
       white-space: nowrap;
-      touch-action: manipulation;
+      letter-spacing: 0.02em;
     }
 
     .btn-primary {
       background: white;
-      color: black;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      color: #1e293b;
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
     }
 
-    .btn-primary:hover,
-    .btn-primary:focus {
-      transform: scale(1.05);
-      box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
-    }
-
-    .btn-primary:active {
-      transform: scale(0.98);
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.35);
     }
 
     .btn-secondary {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.08);
       color: white;
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    .btn-secondary:hover,
-    .btn-secondary:focus {
-      background: rgba(255, 255, 255, 0.1);
-      transform: scale(1.05);
-    }
-
-    .btn-secondary:active {
-      transform: scale(0.98);
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-1px);
     }
 
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1rem;
-      max-width: 1200px;
-      margin: 2rem auto 0;
-      padding: 0 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 0.75rem;
+      max-width: 1000px;
+      margin: 1.5rem auto 0;
+      padding: 0 0.5rem;
     }
 
     .stat-card {
-      background: rgba(15, 7, 24, 1);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 1.5rem;
-      padding: 1.25rem;
+      background: rgba(15, 7, 24, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1rem;
+      padding: 1rem 0.8rem;
       text-align: center;
       transition: all 0.3s;
       cursor: pointer;
     }
 
     .stat-card:hover {
-      border-color: rgba(236, 72, 153, 0.3);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(236, 72, 153, 0.1);
+      border-color: rgba(236, 72, 153, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(236, 72, 153, 0.2);
     }
 
     .stat-value {
-      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      font-size: clamp(1.4rem, 4vw, 2rem);
       font-weight: 900;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
       background: linear-gradient(to bottom, #f472b6, #ec4899);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -465,99 +411,210 @@
 
     .stat-label {
       color: #9ca3af;
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      line-height: 1.3;
+      letter-spacing: 0.04em;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem;
     }
 
     .section-header {
       text-align: center;
-      margin-bottom: 3rem;
-      padding: 0 1rem;
+      margin-bottom: 2.5rem;
     }
 
     .section-tag {
       color: #f472b6;
-      font-family: 'Monaco', monospace;
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 1rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
       display: block;
     }
 
     .section-title {
-      font-size: clamp(1.75rem, 6vw, 3.5rem);
+      font-size: clamp(1.5rem, 5vw, 3rem);
       font-weight: 900;
       line-height: 1.1;
     }
 
+    .section-title .gradient-text {
+      background: linear-gradient(90deg, #ec4899, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ULTRA PREMIUM SKILLS ANIMATION - NEW */
     .skills-section {
-      padding: 3rem 2rem;
-      background: rgba(0, 0, 0, 0.4);
+      padding: 2.5rem 0;
+      background: rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skills-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 1;
     }
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       gap: 1.5rem;
-      max-width: 1400px;
-      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      padding: 2rem 0;
     }
 
     .skill-card {
-      background: rgba(15, 7, 24, 1);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 1.5rem;
-      padding: 1.75rem 1.25rem;
+      background: rgba(15, 7, 24, 0.7);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1.2rem;
+      padding: 1.8rem 1rem;
       text-align: center;
-      transition: all 0.5s;
-      cursor: pointer;
       position: relative;
+      cursor: pointer;
       overflow: hidden;
-      perspective: 1000px;
+      /* ULTRA FLOATING ANIMATION */
+      animation: premiumFloat 6s ease-in-out infinite;
+      animation-delay: calc(var(--order) * 0.2s);
     }
 
+    /* ULTRA PREMIUM FLOATING ANIMATION */
+    @keyframes premiumFloat {
+      0%, 100% { 
+        transform: translateY(0px) scale(1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(236, 72, 153, 0.1);
+      }
+      25% { 
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 40px rgba(236, 72, 153, 0.2);
+      }
+      50% { 
+        transform: translateY(-15px) scale(1.03);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 60px rgba(168, 85, 247, 0.25);
+      }
+      75% { 
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 40px rgba(236, 72, 153, 0.2);
+      }
+    }
+
+    /* GLOWING BORDER EFFECT */
+    .skill-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      padding: 2px;
+      background: linear-gradient(45deg, #ec4899, #a855f7, #06b6d4, #ec4899);
+      border-radius: 1.2rem;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: xor;
+      -webkit-mask-composite: xor;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      animation: borderRotate 3s linear infinite;
+    }
+
+    @keyframes borderRotate {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 400% 50%; }
+    }
+
+    .skill-card:hover::before {
+      opacity: 1;
+    }
+
+    /* HOVER MORPHING EFFECT */
     .skill-card:hover {
-      border-color: rgba(255, 255, 255, 0.2);
-      transform: translateY(-8px) rotateX(5deg) rotateY(-5deg);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    }
-
-    .skill-icon {
-      font-size: 2.25rem;
-      margin-bottom: 1rem;
-      transition: transform 0.3s;
-      display: block;
+      transform: translateY(-10px) scale(1.05) !important;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 
+                  0 0 80px rgba(236, 72, 153, 0.4),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      animation: none;
     }
 
     .skill-card:hover .skill-icon {
-      transform: scale(1.2);
+      transform: scale(1.4) rotate(360deg);
+      filter: drop-shadow(0 0 20px rgba(236, 72, 153, 0.8));
+      animation: iconPulse 0.6s ease-in-out;
+    }
+
+    @keyframes iconPulse {
+      0%, 100% { transform: scale(1.4) rotate(360deg); }
+      50% { transform: scale(1.6) rotate(180deg); }
+    }
+
+    .skill-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      display: block;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
     }
 
     .skill-title {
-      font-size: clamp(0.95rem, 2.5vw, 1.125rem);
-      font-weight: 700;
-      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      margin-bottom: 0.6rem;
       color: white;
+      position: relative;
+      z-index: 2;
+    }
+
+    .skill-card:hover .skill-title {
+      color: #f472b6;
+      text-shadow: 0 0 20px rgba(244, 114, 182, 0.5);
     }
 
     .skill-level {
-      font-size: 0.7rem;
-      color: #9ca3af;
+      font-size: 0.65rem;
+      color: #a1a1aa;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-family: 'Monaco', monospace;
+      letter-spacing: 0.06em;
+      font-weight: 700;
+      position: relative;
+      z-index: 2;
+    }
+
+    .skill-card:hover .skill-level {
+      color: #ec4899;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 480px) {
+      .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+      }
+      .skill-card {
+        padding: 1.4rem 0.8rem;
+      }
     }
 
     .experience-section {
-      padding: 3rem 2rem;
+      padding: 2.5rem 0;
     }
 
     .timeline {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
       position: relative;
     }
@@ -565,68 +622,60 @@
     .timeline::before {
       content: '';
       position: absolute;
-      left: 20px;
+      left: 18px;
       top: 0;
       bottom: 0;
       width: 2px;
-      background: linear-gradient(180deg, rgba(168, 85, 247, 0.5), transparent);
-    }
-
-    @media (max-width: 768px) {
-      .timeline::before {
-        left: 15px;
-      }
+      background: linear-gradient(180deg, rgba(168, 85, 247, 0.6), transparent);
     }
 
     .timeline-item {
-      margin-bottom: 2.5rem;
-      margin-left: 70px;
-      animation: slideInUp 0.6s ease-out;
+      margin-bottom: 2rem;
+      margin-left: 60px;
     }
 
     .timeline-dot {
       position: absolute;
-      left: -22px;
-      width: 40px;
-      height: 40px;
+      left: -15px;
+      width: 32px;
+      height: 32px;
       background: black;
-      border: 4px solid #a855f7;
+      border: 3px solid #a855f7;
       border-radius: 50%;
       top: 0;
-      box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+      box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
     }
 
     .timeline-content {
-      background: rgba(15, 7, 24, 1);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 1rem;
-      padding: 1.5rem;
+      background: rgba(15, 7, 24, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 0.8rem;
+      padding: 1.2rem;
       transition: all 0.3s;
     }
 
     .timeline-content:hover {
-      border-color: rgba(236, 72, 153, 0.3);
+      border-color: rgba(236, 72, 153, 0.4);
+      transform: translateX(5px);
     }
 
     .timeline-year {
       display: inline-block;
-      padding: 0.25rem 0.75rem;
-      background: rgba(255, 255, 255, 0.05);
+      padding: 0.2rem 0.6rem;
+      background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 0.375rem;
+      border-radius: 0.3rem;
       color: #f472b6;
-      font-family: 'Monaco', monospace;
       font-weight: 700;
-      font-size: 0.75rem;
-      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      margin-bottom: 0.75rem;
     }
 
     .timeline-role {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       font-weight: 700;
       color: white;
       margin-bottom: 0.25rem;
-      transition: color 0.3s;
     }
 
     .timeline-content:hover .timeline-role {
@@ -636,85 +685,82 @@
     .timeline-company {
       color: #a855f7;
       font-weight: 600;
-      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
     }
 
     .timeline-desc {
       color: #9ca3af;
-      font-size: 0.95rem;
-      line-height: 1.6;
+      font-size: 0.85rem;
+      line-height: 1.55;
     }
 
     .projects-section {
-      padding: 3rem 2rem;
-      background: rgba(0, 0, 0, 0.4);
+      padding: 2.5rem 0;
+      background: rgba(0, 0, 0, 0.3);
     }
 
     .filter-buttons {
       display: flex;
       justify-content: center;
-      gap: 0.75rem;
-      margin-bottom: 2rem;
+      gap: 0.6rem;
+      margin-bottom: 1.75rem;
       flex-wrap: wrap;
-      padding: 0 1rem;
     }
 
     .filter-btn {
-      padding: 0.5rem 1.25rem;
+      padding: 0.4rem 1rem;
       border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.04);
       color: #d1d5db;
-      border-radius: 0.75rem;
+      border-radius: 0.6rem;
       cursor: pointer;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       transition: all 0.3s;
     }
 
     .filter-btn.active {
       background: linear-gradient(90deg, #c2185b, #a855f7);
       color: white;
-      box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+      box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
     }
 
     .filter-btn:hover:not(.active) {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.12);
     }
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
     }
 
     .project-card {
-      background: rgba(15, 7, 24, 1);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 1.5rem;
+      background: rgba(15, 7, 24, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1rem;
       overflow: hidden;
       transition: all 0.3s;
+      cursor: pointer;
       display: flex;
       flex-direction: column;
-      cursor: pointer;
     }
 
     .project-card:hover {
-      border-color: rgba(236, 72, 153, 0.3);
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(236, 72, 153, 0.1);
+      border-color: rgba(236, 72, 153, 0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(236, 72, 153, 0.2);
     }
 
     .project-header {
-      height: 8px;
+      height: 6px;
       background: linear-gradient(90deg, #ec4899, #fbbf24);
     }
 
     .project-content {
-      padding: 1.5rem;
+      padding: 1.2rem;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
@@ -723,27 +769,27 @@
     .project-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
+      gap: 0.4rem;
+      margin-bottom: 0.75rem;
     }
 
     .tag {
-      font-size: 0.6rem;
+      font-size: 0.55rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.25rem 0.75rem;
-      background: rgba(255, 255, 255, 0.05);
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.6rem;
+      background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 9999px;
-      color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.8);
     }
 
     .project-title {
-      font-size: 1.25rem;
-      font-weight: 900;
+      font-size: 1.1rem;
+      font-weight: 800;
       color: white;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.6rem;
       line-height: 1.3;
     }
 
@@ -753,20 +799,21 @@
 
     .project-desc {
       color: #9ca3af;
-      font-size: 0.9rem;
-      line-height: 1.6;
+      font-size: 0.82rem;
+      line-height: 1.55;
       flex-grow: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
 
     .project-link {
       color: white;
       font-weight: 700;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       text-decoration: none;
       transition: color 0.3s;
+      align-self: flex-start;
     }
 
     .project-card:hover .project-link {
@@ -774,151 +821,125 @@
     }
 
     .contact-section {
-      padding: 3rem 2rem;
-      background: linear-gradient(180deg, rgba(236, 72, 153, 0.2) 0%, transparent 100%);
+      padding: 2.5rem 0;
+      background: linear-gradient(180deg, rgba(236, 72, 153, 0.15) 0%, transparent 100%);
     }
 
     .contact-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin: 2rem 0;
     }
 
     .contact-card {
-      background: rgba(15, 7, 24, 1);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 1.5rem;
-      padding: 2rem 1.5rem;
+      background: rgba(15, 7, 24, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1rem;
+      padding: 1.5rem 1rem;
       text-align: center;
       transition: all 0.3s;
       cursor: pointer;
     }
 
     .contact-card:hover {
-      border-color: rgba(236, 72, 153, 0.3);
-      transform: translateY(-8px);
+      border-color: rgba(236, 72, 153, 0.4);
+      transform: translateY(-6px);
     }
 
     .contact-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      margin-bottom: 0.75rem;
       transition: transform 0.3s;
     }
 
     .contact-card:hover .contact-icon {
-      transform: scale(1.2);
+      transform: scale(1.15);
     }
 
     .contact-label {
       color: #9ca3af;
-      font-size: 0.875rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       margin-bottom: 0.5rem;
     }
 
     .contact-value {
-      font-size: clamp(0.95rem, 2vw, 1.125rem);
+      font-size: clamp(0.9rem, 1.8vw, 1rem);
       font-weight: 700;
       color: white;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
       word-break: break-all;
     }
 
     .copy-btn {
-      padding: 0.5rem 1rem;
+      padding: 0.4rem 0.9rem;
       border: 1px solid rgba(255, 255, 255, 0.2);
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.06);
       color: white;
-      border-radius: 0.5rem;
-      font-size: 0.75rem;
+      border-radius: 0.4rem;
+      font-size: 0.7rem;
       cursor: pointer;
       transition: all 0.3s;
       font-weight: 700;
-      touch-action: manipulation;
     }
 
-    .copy-btn:hover,
-    .copy-btn:focus {
-      background: rgba(255, 255, 255, 0.1);
+    .copy-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
     }
 
     .social-links {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
-      margin-top: 2rem;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
       flex-wrap: wrap;
-      padding: 0 1rem;
     }
 
     .social-icon {
-      width: 55px;
-      height: 55px;
-      background: rgba(15, 7, 24, 1);
+      width: 48px;
+      height: 48px;
+      background: rgba(15, 7, 24, 0.9);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 1rem;
+      border-radius: 0.8rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: #9ca3af;
       text-decoration: none;
       transition: all 0.3s;
-      cursor: pointer;
     }
 
-    .social-icon:hover,
-    .social-icon:focus {
-      border-color: rgba(236, 72, 153, 0.3);
-      transform: scale(1.15);
+    .social-icon:hover {
+      border-color: rgba(236, 72, 153, 0.4);
+      transform: scale(1.1);
+      background: rgba(236, 72, 153, 0.1);
     }
 
     footer {
-      padding: 2rem 1.5rem;
+      padding: 1.5rem;
       border-top: 1px solid rgba(255, 255, 255, 0.05);
-      background: black;
+      background: rgba(0, 0, 0, 0.8);
       text-align: center;
       color: #6b7280;
-      font-size: 0.875rem;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
+      font-size: 0.8rem;
     }
 
     @media (max-width: 480px) {
-      nav {
-        padding: 1rem 1.5rem;
-      }
-
-      nav.scrolled {
-        padding: 0.5rem 1.5rem;
-      }
-
       .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
       }
-
-      .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
-      }
-
       .projects-grid {
         grid-template-columns: 1fr;
       }
-
-      .filter-buttons {
-        gap: 0.5rem;
-      }
-
       .button-group {
-        gap: 0.75rem;
+        gap: 0.6rem;
+      }
+      .filter-buttons {
+        gap: 0.4rem;
       }
     }
   </style>
@@ -972,26 +993,26 @@
 
       <div class="stats-grid">
         <div class="stat-card reveal">
-          <div class="stat-value">50+</div>
-          <div class="stat-label">Reports Automated</div>
+         <div class="stat-value">50+</div>
+         <div class="stat-label">Reports Automated</div>
         </div>
         <div class="stat-card reveal">
-          <div class="stat-value">20+</div>
-          <div class="stat-label">Hours Saved/Week</div>
+         <div class="stat-value">20+</div>
+         <div class="stat-label">Hours Saved/Week</div>
         </div>
         <div class="stat-card reveal">
-          <div class="stat-value">15+</div>
-          <div class="stat-label">Web Apps Built</div>
+         <div class="stat-value">15+</div>
+         <div class="stat-label">Web Apps Built</div>
         </div>
         <div class="stat-card reveal">
-          <div class="stat-value">4+</div>
-          <div class="stat-label">Years Experience</div>
+         <div class="stat-value">4+</div>
+         <div class="stat-label">Years Experience</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
+  <!-- SKILLS SECTION - ULTRA PREMIUM -->
   <section id="skills" class="skills-section">
     <div class="container">
       <div class="section-header reveal">
@@ -1088,7 +1109,7 @@
     // Scroll Reveal Animation
     const observerOptions = {
       threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+      rootMargin: '0px 0px -40px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -1107,16 +1128,16 @@
     // Particle Animation
     function createParticles() {
       const particlesContainer = document.getElementById('particles');
-      const particleCount = window.innerWidth > 768 ? 30 : 15;
+      const particleCount = window.innerWidth > 768 ? 25 : 12;
       
       for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
         
-        const size = Math.random() * 4 + 2;
+        const size = Math.random() * 3 + 1.5;
         const left = Math.random() * 100;
         const top = Math.random() * 100;
-        const duration = Math.random() * 20 + 10;
+        const duration = Math.random() * 18 + 8;
         const color = i % 2 === 0 ? '#ec4899' : '#06b6d4';
         
         particle.style.cssText = `
@@ -1125,9 +1146,9 @@
           left: ${left}%;
           top: ${top}%;
           background: ${color};
-          box-shadow: 0 0 ${Math.random() * 10 + 5}px ${color};
+          box-shadow: 0 0 ${Math.random() * 8 + 4}px ${color};
           animation-duration: ${duration}s;
-          animation-delay: ${Math.random() * 5}s;
+          animation-delay: ${Math.random() * 4}s;
         `;
         
         particlesContainer.appendChild(particle);
@@ -1168,33 +1189,33 @@
       if (charIndex < text.length) {
         typewriterElement.textContent += text[charIndex];
         charIndex++;
-        setTimeout(typewriter, 50);
+        setTimeout(typewriter, 60);
       } else {
         setTimeout(() => {
           typewriterElement.textContent = '';
           charIndex = 0;
           textIndex = (textIndex + 1) % typewriterTexts.length;
           typewriter();
-        }, 2000);
+        }, 1800);
       }
     }
 
-    // Skills Data
+    // Skills Data - Added order for staggered animation
     const skills = [
-      { title: 'Google Apps Script', level: 'Master Level', icon: '📜' },
-      { title: 'Sheets Automation', level: 'Expert', icon: '📊' },
-      { title: 'Web Apps', level: 'Production', icon: '🌐' },
-      { title: 'Git & GitHub', level: 'Pro', icon: '🔧' },
-      { title: 'VS Code', level: 'Ninja', icon: '💻' },
-      { title: 'API Integration', level: 'Strong', icon: '🔌' },
-      { title: 'Security', level: 'OAuth Pro', icon: '🔐' },
-      { title: 'Automation', level: 'Zero-Touch', icon: '🤖' }
+      { title: 'Google Apps Script', level: 'Master Level', icon: '📜', order: 1 },
+      { title: 'Sheets Automation', level: 'Expert', icon: '📊', order: 2 },
+      { title: 'Web Apps', level: 'Production', icon: '🌐', order: 3 },
+      { title: 'Git & GitHub', level: 'Pro', icon: '🔧', order: 4 },
+      { title: 'VS Code', level: 'Ninja', icon: '💻', order: 5 },
+      { title: 'API Integration', level: 'Strong', icon: '🔌', order: 6 },
+      { title: 'Security', level: 'OAuth Pro', icon: '🔐', order: 7 },
+      { title: 'Automation', level: 'Zero-Touch', icon: '🤖', order: 8 }
     ];
 
     function renderSkills() {
       const skillsGrid = document.getElementById('skillsGrid');
       skillsGrid.innerHTML = skills.map(skill => `
-        <div class="skill-card reveal">
+        <div class="skill-card reveal" style="--order: ${skill.order}">
           <div class="skill-icon">${skill.icon}</div>
           <h3 class="skill-title">${skill.title}</h3>
           <p class="skill-level">${skill.level}</p>
@@ -1245,51 +1266,87 @@
       });
     }
 
-    // Projects Data
-    const projects = [
-      {
-        title: 'Customer Complaint System',
-        desc: 'Dynamic frontend to manage customer complaints with real-time tracking and analytics. Reduced resolution time by 30%.',
-        url: 'https://script.google.com/macros/s/AKfycbxJbKIIN4N_ReLSW9yIanZjevHkmUfUSioBIwHrruHbJmoFisvwsjOQrRtMCk5tsRYO/exec',
-        category: 'web',
-        tags: ['Apps Script', 'Dashboard', 'AJAX']
-      },
-      {
-        title: 'Task Management App',
-        desc: 'Frontend web app for task assignment and progress tracking. Boosted team productivity by 25% with dynamic workflows.',
-        url: 'https://script.google.com/macros/s/AKfycbwFPzDLQJfJKI1yWPSjt97l5DwIcHApYcekHJtlPezxRd22xouvy3fKZu_pUcrjBAxg-A/exec',
-        category: 'web',
-        tags: ['Workflow', 'Real-time', 'UI/UX']
-      },
-      {
-        title: 'BOM Kitting Automation',
-        desc: 'Web-based interface for automated Bill of Materials kitting and production planning. Reduced material wastage by 20%.',
-        url: 'https://script.google.com/macros/s/AKfycbylPxoafr5Qkm6yqI8h5HlIEDe74ugfxOH5YPoGg-w6kybi42WugKneQljthMpd5R97/exec',
-        category: 'automation',
-        tags: ['Planning', 'Inventory', 'Logic']
-      },
-      {
-        title: 'Asset Management System',
-        desc: 'Comprehensive system tracking employee details, devices, and equipment. Securely stored in Google Sheets.',
-        url: 'https://script.google.com/macros/s/AKfycbwqCHGf1TVZrIgt-tKxTga66RHIkmUXniID05cIQ5oTI1jxuaJ7o2ilYqnHnP0326yn/exec',
-        category: 'automation',
-        tags: ['Database', 'Tracking', 'Security']
-      },
-      {
-        title: 'Task Analytics Dashboard',
-        desc: 'Real-time analytics dashboard showing task status distribution with live charts. Auto-refreshes every 10 seconds.',
-        url: 'https://script.google.com/macros/s/AKfycby5k58MXsS-efelT9JnnBxN2Si5QSqCsRWbeSFbdnDdigsDxAgnY67EeqSOFwEShTJE/exec',
-        category: 'analytics',
-        tags: ['Charts', 'Data Viz', 'Live']
-      },
-      {
-        title: 'Inventory HTML Form',
-        desc: 'Bulk entry saving through HTML form, streamlining inventory management with efficient data input.',
-        url: 'https://script.google.com/macros/s/AKfycbzHRwuYvLD4lY-dHT_voG_rH5qGusCEVSxnGdlACnVVlGLytJhbhyYe8SqundQLtEPe/exec',
-        category: 'form',
-        tags: ['Forms', 'Data Entry', 'Bulk']
-      }
-    ];
+    // Updated Complete Projects Array for your Portfolio - paste.txt mein replace kar dena
+const projects = [
+  {
+    title: "Customer Complaint Webpage",
+    desc: "Built a dynamic frontend to manage the customer complaint lifecycle with real-time tracking and analytics. Improved user experience with responsive CSS and AJAX, reducing resolution time by 30%.",
+    url: "https://script.google.com/macros/s/AKfycbxJbKIIN4N_ReLSW9yIanZjevHkmUfUSioBIwHrruHbJmoFisvwsjOQrRtMCk5tsRYO/exec",
+    category: "web",
+    tags: ["Apps Script", "Dashboard", "AJAX"]
+  },
+  {
+    title: "Task Management Webpage",
+    desc: "Developed a frontend web application for task assignment and progress tracking. Boosted team productivity by 25% through dynamic workflows and real-time updates.",
+    url: "https://script.google.com/macros/s/AKfycbwFPzDLQJfJKI1yWPSjt97l5DwIcHApYcekHJtlPezxRd22xouvy3fKZu_pUcrjBAxg-A/exec",
+    category: "web",
+    tags: ["Workflow", "Real-time", "UI/UX"]
+  },
+  {
+    title: "BOM Kitting Webpage",
+    desc: "Created a web-based interface for automated Bill of Materials kitting and production planning. Reduced material wastage by 20% with optimized frontend logic.",
+    url: "https://script.google.com/macros/s/AKfycbylPxoafr5Qkm6yqI8h5HlIEDe74ugfxOH5YPoGg-w6kybi42WugKneQljthMpd5R97/exec",
+    category: "automation",
+    tags: ["Planning", "Inventory", "Logic"]
+  },
+  {
+    title: "Asset Management",
+    desc: "Comprehensive asset management system for tracking employee details, allotted devices, and equipment names. All data is securely saved and stored in Google Sheets with real-time updates and reporting capabilities.",
+    url: "https://script.google.com/macros/s/AKfycbwqCHGf1TVZrIgt-tKxTga66RHIkmUXniID05cIQ5oTI1jxuaJ7o2ilYqnHnP0326yn/exec",
+    category: "automation",
+    tags: ["Database", "Tracking", "Security"]
+  },
+  {
+    title: "New Part Code Add",
+    desc: "Efficient part code management tool that records who requested a new part, who approved it, the department involved, and generates automated summaries. Streamlines procurement workflows and data storage.",
+    url: "https://script.google.com/macros/s/AKfycbzONj82KQruPKgQqWjILQeNrTumditz-1GqvjpUZWOPlPr6p93YNibyBm0vXQTU2O8oYQ/exec",
+    category: "automation",
+    tags: ["Procurement", "Approval", "Workflow"]
+  },
+  {
+    title: "Google Sheet to Webpage Pull Data",
+    desc: "Advanced data integration tool that pulls and displays Google Sheets data on webpages with sophisticated filtering options not easily achievable in Sheets alone. Enables dynamic, real-time data visualization.",
+    url: "https://script.google.com/macros/s/AKfycbyLev4PJTpBGWa6cW4Aor7wv7x7ppy9P13kHOM6tkebTHqX2K8m3fUo5np74YIie_XF/exec",
+    category: "web",
+    tags: ["Data Pull", "Filtering", "Visualization"]
+  },
+  {
+    title: "Checklist Webpage",
+    desc: "Personalized daily task checklist dashboard with employee login authentication. Displays only assigned tasks per user, auto-removes completed items upon submission, ensuring secure and efficient daily workflows.",
+    url: "https://script.google.com/macros/s/AKfycbyu4ZvxqgUMsCbpLKT1ULYZZOl5JimPjuF7i0ro2jr__FyLkZHVU7pfqKaaBNqCeaZl/exec",
+    category: "automation",
+    tags: ["Authentication", "Daily Tasks", "Personalized"]
+  },
+  {
+    title: "Inventory Html Form",
+    desc: "An inventory HTML form that allows bulk entry saving through HTML form, streamlining inventory management with efficient data input and storage.",
+    url: "https://script.google.com/macros/s/AKfycbzHRwuYvLD4lY-dHT_voG_rH5qGusCEVSxnGdlACnVVlGLytJhbhyYe8SqundQLtEPe/exec",
+    category: "form",
+    tags: ["Bulk Entry", "Inventory", "Forms"]
+  },
+  {
+    title: "Task Checklist Html Form",
+    desc: "A checklist HTML form for task management, enabling users to create and submit checklists with ease.",
+    url: "https://script.google.com/macros/s/AKfycbyggXKbcTrsSUpUioZ7K-8fU9JjJQcr3twhZyRYNX1SFG3t9UCc3ozbOWv_2Mr7fKGy/exec",
+    category: "form",
+    tags: ["Checklists", "Task Form", "Submission"]
+  },
+  {
+    title: "Delegation HTML Form",
+    desc: "A delegation management HTML form that streamlines task assignment and approval workflows with efficient data capture and storage in Google Sheets.",
+    url: "https://script.google.com/macros/s/AKfycbwRBsIe-wt9BguKU1hamQVONl5K4Sats5V0kXnQfIyqj3LACu3sgmFSx2N6SKv90XxKFw/exec",
+    category: "form",
+    tags: ["Delegation", "Assignment", "Approval"]
+  },
+  {
+    title: "Task Analytics Dashboard",
+    desc: "Real-time analytics dashboard showing task status distribution: Pending, In Progress, Completed, Hold, Cancelled with live pie chart. Auto-refreshes every 10 seconds.",
+    url: "https://script.google.com/macros/s/AKfycby5k58MXsS-efelT9JnnBxN2Si5QSqCsRWbeSFbdnDdigsDxAgnY67EeqSOFwEShTJE/exec",
+    category: "analytics",
+    tags: ["Charts", "Real-time", "Analytics"]
+  }
+];
+
 
     let currentFilter = 'all';
 
@@ -1358,28 +1415,7 @@
       typewriter();
     });
 
-    // 3D Tilt Effect for Skill Cards (Desktop only)
-    if (window.innerWidth > 768) {
-      document.addEventListener('mousemove', (e) => {
-        document.querySelectorAll('.skill-card').forEach(card => {
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          const centerX = rect.width / 2;
-          const centerY = rect.height / 2;
-          const rotateX = (y - centerY) / 10;
-          const rotateY = (centerX - x) / 10;
-          
-          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        });
-      });
-
-      document.addEventListener('mouseleave', () => {
-        document.querySelectorAll('.skill-card').forEach(card => {
-          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
-        });
-      });
-    }
+    // NO MORE 3D TILT EFFECT - CLEAN PERFORMANCE! 🎉
   </script>
 </body>
 </html>
